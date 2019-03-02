@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      background: black;
+    }
+    canvas {
+      border: 1px solid white;
+    }
+    span {
+      color: white;
+      margin-left: 20px;
+    }
+    </style>
+  </head>
+
+  <body>
+    <canvas width="400" height="400" id="game"></canvas>
+    <div>
+      <input type="range" min="1" max="100" value="60" id="slider" id="myRange">
+      <span id="score">Score : 0</span><span id="bestscore">Best score : 0</span><span id="gen">Gen : 0</span>
+    </div>
+    <script src="snake.js"></script>
+    <script src="q-learning.js"></script>
+  </body>
+</html>
